@@ -1,0 +1,21 @@
+	ba main
+	nop
+mul:
+	mov %l0, %i0
+	mov 0, %i1
+while:
+	cmp %i0, 0
+	ble result
+	nop
+	add %i1, %l1, %i1
+	sub %i0, 1, %i0
+	ba while
+	nop
+result:
+	mov %i1, %o0
+	jmpl %o7, 8, %g0
+	nop
+main:
+	mov 5, %l0
+	mov 4 %l1
+	call mul

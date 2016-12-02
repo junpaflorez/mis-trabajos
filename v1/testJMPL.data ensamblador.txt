@@ -1,0 +1,6 @@
+mov 7, %l1
+mov -11, %l2
+add %l1, %l2, %l3
+add %l1,2,%l1
+mov 3, %l4
+sub %l3, %l4, %l5

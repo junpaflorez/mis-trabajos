@@ -1,0 +1,8 @@
+mov 2, %o5
+mov 3, %o0
+cmp %o5,%o0,%g1  ---> Verificar los valor de nzvc
+sub %g1,10,%g2
+restore %g0,2,%l0
+mov 4,%l1
+save %l0,0,%g0 ---> este se puede convertir en un restore sin parámetros
+addxcc %i0, 12, %o3--->Operaciones en la ventana 2
